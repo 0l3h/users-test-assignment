@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+}
+
+h1 + div {
+    display: flex;
+}
+
+h1 + div > span {
+    margin-right: auto;
+}
+
+main {
+    margin: auto;
+    max-width: 50vw;
+}
+
+button:not(form > button) {
+    background: none;
+    border: none;
+}
+
+button:not(form > button):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main > form {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+ol {
+    padding: 0;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+li > * {
+    flex: 1;
+}
+
+li > span {
+    display: inline-block;
+}
+
+li > span:first-child {
+    font-weight: bold;
+}
+
+li > span:nth-child(2) {
+    margin-right: 10px;
+}
+
+li > span:nth-child(3) {
+    color: gray;
+    font-size: 12px;
+}
+
+li > a {
+    color: blue;
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
